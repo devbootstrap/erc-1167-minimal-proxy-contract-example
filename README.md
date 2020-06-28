@@ -2,6 +2,14 @@
 
 An example of a contract that implements ERC-1167: Minimal Proxy
 
+### Video Tutorial
+
+There is an accompanying video tutorial that explains these concepts in more detail over on the [DevBootstrap YouTube channel here](https://youtu.be/7H7GVI1gsTc).
+
+### ERC-1167 Concepts
+
+<img src='./img/erc-1167.png' height=442 width=708>
+
 __Setup commands__
 
 For background information, these are the commands used to setup this project initially
@@ -10,15 +18,13 @@ For background information, these are the commands used to setup this project in
 npm i -g truffle
 npm install @openzeppelin/upgrades
 truffle init
-truffle create migration store
-truffle create migration storeFactory
 ```
 
 __Try out this example__
 
 To run this example on your local machine, you need to clone this repo(!) and then follow the below instructions.
 
-Start up a new truffle console session in your terminal using `truffle console` then, in the session, compile and deploy the Store and StoreFactory contracts. In order to test this out in the Tuffle Console we essentially need to:
+Start up a new `ganache-cli` session in one termain and a truffle console session in another terminal using `truffle console` then, in the session, compile and deploy the Store and StoreFactory contracts. In order to test this out in the Tuffle Console we essentially need to:
 
 1. Compile the contracts
 1. Migrate the contracts
